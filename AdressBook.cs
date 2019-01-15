@@ -11,7 +11,7 @@ namespace AddressBook
       string[] lastNames = new string[10];
       string[] addresses = new string[10];
       string[] emails = new string[10];
-      // int[] phoneNumbers;
+      string[] phoneNumbers = new string[10];
 
       bool keepGoing = true;
 
@@ -50,7 +50,7 @@ namespace AddressBook
           Console.WriteLine("Please enter the phone number: ");
           // string phoneNumber = Console.ReadLine();
           // string[] phoneNumbers = new string[10];
-          // phoneNumbers[0]= Console.ReadLine();
+          phoneNumbers[0]= Console.ReadLine();
           //=== add info to Book ===
           continue;
         }
@@ -63,7 +63,7 @@ namespace AddressBook
           //=== return entry ===
           if (search == lastNames[0])
           {
-            Console.WriteLine("First Name : " + firstNames[0] + ", Last Name : " + lastNames[0] + ", Address : " + addresses[0] + ", Email : " + emails[0] + "." );
+            Console.WriteLine("First Name : " + firstNames[0] + ", Last Name : " + lastNames[0] + ", Address : " + addresses[0] + ", Email : " + emails[0] + ", Phone Number: " + phoneNumbers[0] );
             continue;
           }
           else
